@@ -1,0 +1,98 @@
+.exercise{
+    position: relative;
+    bottom: 200px;
+}
+
+.exercise__header{
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+}
+
+.exercise__header>h5{
+    position: relative;
+    font-size: 12px;
+    right: 70px;
+    line-height: 12px;
+    letter-spacing: 1.5px;
+    opacity: 67%;
+    color: white;
+}
+
+.exercise__header>h3{
+    font-size: 35px;
+    line-height: 45px;
+    letter-spacing: 0.3px;
+    color: white;
+}
+
+.exercise__cards>div{
+    width: 373px;
+    max-width: 373px;
+}
+
+.cards_image>img{
+    border-radius: 10px;
+
+}
+
+.cards_image::after{
+    display: block;
+    position: relative;
+    content: '';
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%,rgba(0, 0, 0, 1) 100%);
+    margin-top: -150px;
+    height: 150px;
+    width: 100%;
+    content: '';
+}
+
+.cards__footer{
+    position: relative;
+    bottom: 90px;
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+}
+
+.cards__footer>h3, .cards_calories{
+    padding-left: 20px;
+}
+
+.cards__footer>span{
+    margin-right: 15px;
+}
+
+.footer_name{
+    font-family: "Poppins";
+    color: white;
+    position: relative;
+    top: 10px;
+    font-size: 50px;
+    line-height: 45px;
+    letter-spacing: 0.3px;
+}
+
+.footer_time{
+    position: relative;
+    left: 20px;
+    font-size: 20px;
+    line-height: 19px;
+    letter-spacing: 1.37px;
+    background-color: black;
+    border-radius: 20px;
+    border: 8px solid black;
+    opacity: 100%;
+}
+
+.cards_calories{
+    position: relative;
+    bottom: 120px;
+    left: 10px;
+}
+
+.exercise__cards{
+    display: grid;
+    grid-template-columns: repeat(3, 450px);
+    grid-template-rows: repeat(2, 400px);
+}

@@ -1,0 +1,124 @@
+.workout{
+    position: relative;
+    display: flex;
+}
+
+.workout__container{
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(4, 321px);
+    grid-template-rows: 733px repeat(3, 321px);
+}
+
+.container_trainer>div{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: end;
+}
+
+.container_trainer>div>span{
+    padding-left: 20px;
+}
+
+.container_trainer>div::after{
+    color: white;
+    font-size: 20px;
+    line-height: 25px;
+    letter-spacing: 0.5px;
+}
+
+.container_trainer>div::before{
+    size: 14px;
+    line-height: 14px;
+    letter-spacing: 0.5px;
+}
+
+.container__trainer_william{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+
+.container__trainer_summer{
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 3;
+    grid-row-end: 4;
+}
+
+.container__trainer_wise{
+    position: relative;
+    bottom: 194px;
+    grid-column-start: 3;
+    grid-column-end: 5;
+    grid-row-start: 2;
+    grid-row-end: 4;
+}
+
+.container_program{
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    background-color: #292929;
+    grid-column-start: 2;
+    grid-column-end: 6;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+
+.container_program>div{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-content: end;
+    padding-left: 190px;
+}
+
+.container_program>div>p{
+    color: white;
+    opacity: 70%;
+    font-size: 25px;
+    line-height: 50px;
+    letter-spacing: 0.5px;
+    padding: 60px;
+}
+
+.container_program>div>button {
+    font-family: "Poppins";
+    font-size: 18px;
+    line-height: 22px;
+    letter-spacing: 1px;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 10px;
+    height: 70px;
+    width: 200px;
+    text-decoration: none;
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin-left: 60px;
+  }
+
+  .workout__container>span{
+    position: relative;
+    top: 60px;
+    font-weight: 600;
+    text-wrap: nowrap;
+    font-size: 120px;
+    line-height: 120px;
+    letter-spacing: -2px;
+    opacity: 100%;
+    z-index: 3;
+  }
+
+  .workout__container>span>img{
+    position: relative;
+    bottom: 110px;
+    right: 40px;
+    z-index: -1;
+    transform: rotate(-5deg); 
+    
+  }
