@@ -4,10 +4,12 @@ span,p{
 }
 
 .preview{
+  max-width: 1270px;
   width: inherit;
+  padding-left: 35px;
 }
 
-.preview__group1{
+.preview__group{
   display: flex;
   align-items: center;
   background-color: #333;
@@ -26,7 +28,7 @@ span,p{
   margin-left: 5%;
 }
 
-.group1_badge {
+.preview__badge {
     background-color: #28a745;
     color: white;
     font-size: 10px;
@@ -37,16 +39,15 @@ span,p{
     min-width: 26px;
   }
   
-  .group1_text {
+  .preview__text {
     font-size: 12px;
     white-space: nowrap;
-    margin-top: 15px;
     margin-left: 5%;
     text-align: center;
     letter-spacing: 0.5px;
   }
 
-  .preview__group2>h5{
+  .preview__card>h5{
     position: relative;
     bottom: 60px;
     font-size: 200px;
@@ -55,21 +56,21 @@ span,p{
     color: white;
   }
 
-  .group2_image{
+  .preview__image{
     z-index: -1;
     position: absolute;
     top: 50px;
     left: 540px;
   }
 
-  .preview__group2{
+  .preview__card{
     display: flex;
     flex-wrap: nowrap;
     align-items: center;
     justify-content: space-between;
   }
 
-  .blocks_name{
+  .preview__stat{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -77,28 +78,31 @@ span,p{
     position: relative;
     border-radius: 20px;
     background-color: #242424;
-    width: 22vw;
     max-width: 220px;
     max-height: 100px;
+    min-width: 220px;
+    min-height: 100px;
     height: 10vh;
-    margin: 1vh;
+    margin-inline-start: 230px;
+    margin-block-start: 5px;
   }
-  .time,.colories{
+  .preview__time,.preview__calories{
     position: relative;
     top: 10px;
     font-size: 40px;
     line-height: 40px;
     letter-spacing: 1px;
   }
-  .blocks_name>.time{
+
+  .preview__stat>.preview__time{
     color: rgba(255, 230, 66, 1);
   }
 
-  .blocks_name>.colories{
+  .preview__stat>.preview__calories{
     color: rgba(251, 19, 81, 1);
   }
 
-  .blocks_name>h4>span{
+  .preview__stat>h4>span{
     position: relative;
     font-size: 14px;
     bottom: 10px;
@@ -114,14 +118,14 @@ span,p{
     padding-left: 0.5%;
   }
 
-  .preview__buttons{
+  .preview__actions{
     display: flex;
     justify-content: start;
     position: relative;
     bottom: 300px;
   }
 
-  .preview__buttons>button {
+  .preview__actions>button {
     font-family: "Poppins";
     font-size: 18px;
     line-height: 22px;
@@ -138,18 +142,18 @@ span,p{
     margin: 0 10px;
   }
 
-  .buttons_get-started {
+  .button_primary {
     background-color: rgba(37, 171, 117, 1);
   }
 
-  .buttons_get-started:hover {
+  .button_primary:hover {
     background-color: #218838;
   }
 
-  .buttons_preview {
+  .button_secondary {
     background-color: #333;
   }
 
-  .buttons_preview:hover {
+  .button_secondary:hover {
     background-color: #444;
   }

@@ -1,6 +1,7 @@
 .workout{
     position: relative;
     display: flex;
+    padding-left: 35px;
 }
 
 .workout__container{
@@ -10,45 +11,45 @@
     grid-template-rows: 733px repeat(3, 321px);
 }
 
-.container_trainer>div{
+.workout__trainer>div{
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     justify-content: end;
 }
 
-.container_trainer>div>span{
+.workout__trainer>div>span{
     padding-left: 20px;
 }
 
-.container_trainer>div::after{
+.workout__trainer>div::after{
     color: white;
     font-size: 20px;
     line-height: 25px;
     letter-spacing: 0.5px;
 }
 
-.container_trainer>div::before{
+.workout__trainer>div::before{
     size: 14px;
     line-height: 14px;
     letter-spacing: 0.5px;
 }
 
-.container__trainer_william{
+.workout__trainer_william{
     grid-column-start: 1;
     grid-column-end: 2;
     grid-row-start: 2;
     grid-row-end: 3;
 }
 
-.container__trainer_summer{
+.workout__trainer_summer{
     grid-column-start: 2;
     grid-column-end: 3;
     grid-row-start: 3;
     grid-row-end: 4;
 }
 
-.container__trainer_wise{
+.workout__trainer_wise{
     position: relative;
     bottom: 194px;
     grid-column-start: 3;
@@ -57,7 +58,7 @@
     grid-row-end: 4;
 }
 
-.container_program{
+.workout__program{
     display: flex;
     justify-content: center;
     align-items: start;
@@ -68,7 +69,7 @@
     grid-row-end: 2;
 }
 
-.container_program>div{
+.workout__program>div{
     display: flex;
     flex-direction: column;
     justify-content: start;
@@ -76,7 +77,7 @@
     padding-left: 190px;
 }
 
-.container_program>div>p{
+.workout__program>div>p{
     color: white;
     opacity: 70%;
     font-size: 25px;
@@ -85,7 +86,7 @@
     padding: 60px;
 }
 
-.container_program>div>button {
+.workout__program>div>button {
     font-family: "Poppins";
     font-size: 18px;
     line-height: 22px;

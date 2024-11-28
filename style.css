@@ -1,16 +1,26 @@
-@import url("./styles/navbar.css");
+@import url("./styles/header.css");
 @import url("./styles/preview.css");
 @import url("./styles/exercise.css");
 @import url("./styles/workout.css");
-@import url("./styles/traine-list.css");
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url("./styles/trainings.css");
+
+@font-face {
+    font-family: "Poppins";
+    src: url(./fonts/Poppins-Bold.ttf) format('ttf');
+    font-weight: 600;
+}
+
+@font-face {
+    font-family: "Poppins-Italic";
+    src: url(./fonts/Poppins-Italic.ttf) format('ttf');
+    font-weight: 600;
+}
 
 body{
     position: relative;
-    transform: translate(-50%,0);
+    transform: translate(-50%, 0);
     left: 50%;
-    font-family: "Poppins";
+    font-family: "Poppins", "Poppins-Italic";
     max-width: 1343px;
-    margin: 10px;
     background-color: black;
 }
